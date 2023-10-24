@@ -1,0 +1,466 @@
+Command: launch_simulation -simset sim_6 -mode behavioral
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/Mahmoud Magdi/Modular Multiplier/Modular Multiplier.sim/sim_6/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_6'
+INFO: [SIM-utils-54] Inspecting design source files for 'SSMM_tb' in fileset 'sim_6'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-100] Fetching design files from 'sources_1'...(this may take a while)...
+INFO: [USF-XSim-101] Fetching design files from 'sim_6'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/Mahmoud Magdi/Modular Multiplier/Modular Multiplier.sim/sim_6/behav/xsim'
+"xvlog --incr --relax -prj SSMM_tb_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Mahmoud Magdi/Modular Multiplier/Modular Multiplier.srcs/sources_1/new/MMM.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module montgomery_multiplier
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/Mahmoud Magdi/Modular Multiplier/Modular Multiplier.srcs/sim_6/new/SSMM_tb.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module SSMM_tb
+"xvhdl --incr --relax -prj SSMM_tb_vhdl.prj"
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/Mahmoud Magdi/Modular Multiplier/Modular Multiplier.srcs/sources_1/new/MMM.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'montgomery_multiplier'
+run_program: Time (s): cpu = 00:00:00 ; elapsed = 00:00:05 . Memory (MB): peak = 3713.504 ; gain = 0.000
+INFO: [USF-XSim-69] 'compile' step finished in '5' seconds
+launch_simulation: Time (s): cpu = 00:00:00 ; elapsed = 00:00:05 . Memory (MB): peak = 3713.504 ; gain = 0.000
+Command: launch_simulation -simset sim_6 -mode behavioral
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/Mahmoud Magdi/Modular Multiplier/Modular Multiplier.sim/sim_6/behav/xsim'
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/Mahmoud Magdi/Modular Multiplier/Modular Multiplier.sim/sim_6/behav/xsim'
+"xelab -wto a0e529f2f29847e0bb2b3da4f4bb4214 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot SSMM_tb_behav xil_defaultlib.SSMM_tb xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator 2020.1
+Copyright 1986-1999, 2001-2020 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2020.1/bin/unwrapped/win64.o/xelab.exe -wto a0e529f2f29847e0bb2b3da4f4bb4214 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot SSMM_tb_behav xil_defaultlib.SSMM_tb xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package xil_defaultlib.$unit_SSMM_tb_sv
+Compiling module xil_defaultlib.shift_sub_mod_mul
+Compiling module xil_defaultlib.SSMM_tb
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot SSMM_tb_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '1' seconds
+Vivado Simulator 2020.1
+Time resolution is 1 ps
+relaunch_sim: Time (s): cpu = 00:00:01 ; elapsed = 00:00:09 . Memory (MB): peak = 3713.504 ; gain = 0.000
+run all
+i_a =                                                                             20
+i_b =                                                                             77
+i_m =                                                                             97
+o_P =                                                                             85
+
+ *********************************************************** 
+
+i_a =                                                                             27
+i_b =                                                                             28
+i_m =                                                                             97
+o_P =                                                                             77
+
+ *********************************************************** 
+
+i_a =                                                                              5
+i_b =                                                                             27
+i_m =                                                                             97
+o_P =                                                                             38
+
+ *********************************************************** 
+
+i_a =                                                                             78
+i_b =                                                                             70
+i_m =                                                                             97
+o_P =                                                                             28
+
+ *********************************************************** 
+
+i_a =                                                                             13
+i_b =                                                                             42
+i_m =                                                                             97
+o_P =                                                                             61
+
+ *********************************************************** 
+
+i_a =                                                                             46
+i_b =                                                                             96
+i_m =                                                                             97
+o_P =                                                                             51
+
+ *********************************************************** 
+
+i_a =                                                                             22
+i_b =                                                                             54
+i_m =                                                                             97
+o_P =                                                                             24
+
+ *********************************************************** 
+
+i_a =                                                                             11
+i_b =                                                                             18
+i_m =                                                                             97
+o_P =                                                                              4
+
+ *********************************************************** 
+
+i_a =                                                                             17
+i_b =                                                                             43
+i_m =                                                                             97
+o_P =                                                                             52
+
+ *********************************************************** 
+
+i_a =                                                                             28
+i_b =                                                                             76
+i_m =                                                                             97
+o_P =                                                                             91
+
+ *********************************************************** 
+
+i_a =                                                                             76
+i_b =                                                                             17
+i_m =                                                                             97
+o_P =                                                                             31
+
+ *********************************************************** 
+
+i_a =                                                                             30
+i_b =                                                                             40
+i_m =                                                                             97
+o_P =                                                                             36
+
+ *********************************************************** 
+
+i_a =                                                                             51
+i_b =                                                                             34
+i_m =                                                                             97
+o_P =                                                                             85
+
+ *********************************************************** 
+
+i_a =                                                                             10
+i_b =                                                                             25
+i_m =                                                                             97
+o_P =                                                                             56
+
+ *********************************************************** 
+
+i_a =                                                                             69
+i_b =                                                                             93
+i_m =                                                                             97
+o_P =                                                                             15
+
+ *********************************************************** 
+
+i_a =                                                                             72
+i_b =                                                                             77
+i_m =                                                                             97
+o_P =                                                                             15
+
+ *********************************************************** 
+
+i_a =                                                                             56
+i_b =                                                                             12
+i_m =                                                                             97
+o_P =                                                                             90
+
+ *********************************************************** 
+
+i_a =                                                                             78
+i_b =                                                                             43
+i_m =                                                                             97
+o_P =                                                                             56
+
+ *********************************************************** 
+
+i_a =                                                                             16
+i_b =                                                                             25
+i_m =                                                                             97
+o_P =                                                                             12
+
+ *********************************************************** 
+
+i_a =                                                                              3
+i_b =                                                                             51
+i_m =                                                                             97
+o_P =                                                                             56
+
+ *********************************************************** 
+
+i_a =                                                                             47
+i_b =                                                                             52
+i_m =                                                                             97
+o_P =                                                                             19
+
+ *********************************************************** 
+
+i_a =                                                                             11
+i_b =                                                                             92
+i_m =                                                                             97
+o_P =                                                                             42
+
+ *********************************************************** 
+
+i_a =                                                                             38
+i_b =                                                                             92
+i_m =                                                                             97
+o_P =                                                                              4
+
+ *********************************************************** 
+
+i_a =                                                                             44
+i_b =                                                                             65
+i_m =                                                                             97
+o_P =                                                                             47
+
+ *********************************************************** 
+
+i_a =                                                                             60
+i_b =                                                                             89
+i_m =                                                                             97
+o_P =                                                                              5
+
+ *********************************************************** 
+
+i_a =                                                                             58
+i_b =                                                                             48
+i_m =                                                                             97
+o_P =                                                                             68
+
+ *********************************************************** 
+
+i_a =                                                                             87
+i_b =                                                                             58
+i_m =                                                                             97
+o_P =                                                                              2
+
+ *********************************************************** 
+
+i_a =                                                                             24
+i_b =                                                                             93
+i_m =                                                                             97
+o_P =                                                                              1
+
+ *********************************************************** 
+
+i_a =                                                                             80
+i_b =                                                                             63
+i_m =                                                                             97
+o_P =                                                                             93
+
+ *********************************************************** 
+
+i_a =                                                                             80
+i_b =                                                                             21
+i_m =                                                                             97
+o_P =                                                                             31
+
+ *********************************************************** 
+
+i_a =                                                                            110
+i_b =                                                                            142
+i_m =                                                                            181
+o_P =                                                                             54
+
+ *********************************************************** 
+
+i_a =                                                                              8
+i_b =                                                                            143
+i_m =                                                                            181
+o_P =                                                                             58
+
+ *********************************************************** 
+
+i_a =                                                                             90
+i_b =                                                                             46
+i_m =                                                                            181
+o_P =                                                                            158
+
+ *********************************************************** 
+
+i_a =                                                                            137
+i_b =                                                                             14
+i_m =                                                                            181
+o_P =                                                                            108
+
+ *********************************************************** 
+
+i_a =                                                                             28
+i_b =                                                                            129
+i_m =                                                                            181
+o_P =                                                                            173
+
+ *********************************************************** 
+
+i_a =                                                                             92
+i_b =                                                                             48
+i_m =                                                                            181
+o_P =                                                                             72
+
+ *********************************************************** 
+
+i_a =                                                                             99
+i_b =                                                                            147
+i_m =                                                                            181
+o_P =                                                                             73
+
+ *********************************************************** 
+
+i_a =                                                                              4
+i_b =                                                                            149
+i_m =                                                                            181
+o_P =                                                                             53
+
+ *********************************************************** 
+
+i_a =                                                                             87
+i_b =                                                                            179
+i_m =                                                                            181
+o_P =                                                                              7
+
+ *********************************************************** 
+
+i_a =                                                                             45
+i_b =                                                                             32
+i_m =                                                                            181
+o_P =                                                                            173
+
+ *********************************************************** 
+
+i_a =                                                                            179
+i_b =                                                                            106
+i_m =                                                                            181
+o_P =                                                                            150
+
+ *********************************************************** 
+
+i_a =                                                                             93
+i_b =                                                                             90
+i_m =                                                                            181
+o_P =                                                                             44
+
+ *********************************************************** 
+
+i_a =                                                                            106
+i_b =                                                                            159
+i_m =                                                                            181
+o_P =                                                                             21
+
+ *********************************************************** 
+
+i_a =                                                                            171
+i_b =                                                                             20
+i_m =                                                                            181
+o_P =                                                                            162
+
+ *********************************************************** 
+
+i_a =                                                                             19
+i_b =                                                                            177
+i_m =                                                                            181
+o_P =                                                                            105
+
+ *********************************************************** 
+
+i_a =                                                                             79
+i_b =                                                                            115
+i_m =                                                                            181
+o_P =                                                                             35
+
+ *********************************************************** 
+
+i_a =                                                                             11
+i_b =                                                                              7
+i_m =                                                                            181
+o_P =                                                                             77
+
+ *********************************************************** 
+
+i_a =                                                                             90
+i_b =                                                                             62
+i_m =                                                                            181
+o_P =                                                                            150
+
+ *********************************************************** 
+
+i_a =                                                                            107
+i_b =                                                                             41
+i_m =                                                                            181
+o_P =                                                                             43
+
+ *********************************************************** 
+
+i_a =                                                                            146
+i_b =                                                                            116
+i_m =                                                                            181
+o_P =                                                                            103
+
+ *********************************************************** 
+
+i_a =                                                                             39
+i_b =                                                                            127
+i_m =                                                                            181
+o_P =                                                                             66
+
+ *********************************************************** 
+
+i_a =                                                                            170
+i_b =                                                                            167
+i_m =                                                                            181
+o_P =                                                                            154
+
+ *********************************************************** 
+
+i_a =                                                                             77
+i_b =                                                                            102
+i_m =                                                                            181
+o_P =                                                                             71
+
+ *********************************************************** 
+
+i_a =                                                                             50
+i_b =                                                                             71
+i_m =                                                                            181
+o_P =                                                                            111
+
+ *********************************************************** 
+
+i_a =                                                                             39
+i_b =                                                                             58
+i_m =                                                                            181
+o_P =                                                                             90
+
+ *********************************************************** 
+
+i_a =                                                                             30
+i_b =                                                                            107
+i_m =                                                                            181
+o_P =                                                                            133
+
+ *********************************************************** 
+
+i_a =                                                                              3
+i_b =                                                                             33
+i_m =                                                                            181
+o_P =                                                                             99
+
+ *********************************************************** 
+
+i_a =                                                                              5
+i_b =                                                                            138
+i_m =                                                                            181
+o_P =                                                                            147
+
+ *********************************************************** 
+
+i_a =                                                                             37
+i_b =                                                                             69
+i_m =                                                                            181
+o_P =                                                                             19
+
+ *********************************************************** 
+
+i_a =                                                                            158
+i_b =                                                                             17
+i_m =                                                                            181
+o_P =                                                                            152
+
+ *********************************************************** 
+
+$finish called at time : 184010 ns : File "C:/Users/Mahmoud Magdi/Modular Multiplier/Modular Multiplier.srcs/sim_6/new/SSMM_tb.sv" Line 147
