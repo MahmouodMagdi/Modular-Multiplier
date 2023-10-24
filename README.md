@@ -1,4 +1,4 @@
-![image](https://github.com/MahmouodMagdi/Modular-Multiplier/assets/72949261/9ca0332b-12d0-4d76-8841-50a2432d769e)# Modular-Multiplier
+# Modular-Multiplier
 A System Verilog Design of the Shift-sub Modular Multiplier Algorithm 
 
 
