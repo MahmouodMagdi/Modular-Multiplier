@@ -23,4 +23,4 @@ This repository introduces a Shift-Sub Modular Multiplication (SSMM) algorithm S
 - The advantage of the Shift-Sub Modular Multiplier is that it does not require any domain transformation which was done in the montgomery algorithms
 - The correctness of the SSMM algorithm is based on the following fact: Because we are calculating z = ab mod m, we can add/subtract multiples of m to/from z.
 - The Implemented algorithm computes the modular multiplication of a*b mod(m) up to 256 bits
-- Most of computations are done within about 2 clock cycles for numbers less than decimal values = 200
+- Most of computations are done within about 5 to 10 clock cycles
